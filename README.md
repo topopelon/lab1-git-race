@@ -11,7 +11,8 @@ Some ideas for obtaining a :gift: if you are the first that:
 - **Home improvement II**: Use an endpoint that returns the message and update the HTML in client side (no MVC server side)
 - **Home improvement III**: Use moder JS framework (React) and a Restful web service (no MVC server side)
 
-User name | NIA | Travis-CI|Score
-----------|-----|----------|-----
-[UNIZAR-30246-WebEngineering](https://github.com/UNIZAR-30246-WebEngineering/lab1-git-race) |30246 | [![Build Status](https://github.com/UNIZAR-30246-WebEngineering/lab1-git-race/actions/workflows/ci.yml/badge.svg)](https://github.com/UNIZAR-30246-WebEngineering/lab1-git-race/actions/workflows/ci.yml)
-your name | your nia | your Travis-ci status
+| User name                                                                                   | NIA      | Travis-CI                                                                                                                                                                                                 | Score |
+| ------------------------------------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| [UNIZAR-30246-WebEngineering](https://github.com/UNIZAR-30246-WebEngineering/lab1-git-race) | 30246    | [![Build Status](https://github.com/UNIZAR-30246-WebEngineering/lab1-git-race/actions/workflows/ci.yml/badge.svg)](https://github.com/UNIZAR-30246-WebEngineering/lab1-git-race/actions/workflows/ci.yml) |
+| your name                                                                                   | your nia | your Travis-ci status                                                                                                                                                                                     |
+| [Jorge Laguna](https://github.com/topopelon/lab1-git-race)                                  | 735550   | [![Build Status](https://github.com/topopelon/lab1-git-race/actions/workflows/ci.yml/badge.svg)](https://github.com/topopelon/lab1-git-race/actions/workflows/ci.yml)                                     |
