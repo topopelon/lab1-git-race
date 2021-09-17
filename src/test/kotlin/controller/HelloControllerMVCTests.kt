@@ -12,18 +12,22 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.*
 
 @WebMvcTest(HelloController::class)
 class HelloControllerMVCTests {
-    @Value("\${app.message}")
-    private lateinit var message: String
+    @Value("\${app.message}") private lateinit var message: String
 
-    @Autowired
-    private lateinit var mockMvc: MockMvc
+    // Mock the controller
+    @Autowired private lateinit var mockMvc: MockMvc
 
+    /**
+     * With the controller [HelloController] mocked, test performs a GET request to server-side
+     * endpoint "/" and:
+     * - expect to receive an OK status
+     * - expect the atributte "message" of the model to be ["message"]
+     */
     @Test
     fun testMessage() {
         mockMvc.perform(get("/"))
-            .andDo(print())
-            .andExpect(status().isOk)
-            .andExpect(model().attribute("message", equalTo(message)))
+                .andDo(print())
+                .andExpect(status().isOk)
+                .andExpect(model().attribute("message", equalTo(message)))
     }
 }
-
