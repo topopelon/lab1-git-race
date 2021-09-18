@@ -15,3 +15,4 @@ User name | NIA | Travis-CI|Score
 ----------|-----|----------|-----
 [UNIZAR-30246-WebEngineering](https://github.com/UNIZAR-30246-WebEngineering/lab1-git-race) |30246 | [![Build Status](https://github.com/UNIZAR-30246-WebEngineering/lab1-git-race/actions/workflows/ci.yml/badge.svg)](https://github.com/UNIZAR-30246-WebEngineering/lab1-git-race/actions/workflows/ci.yml)
 Isaac Velasco Calvo | 758986 | [![Build Status](https://github.com/pkmniako/lab1-git-race/actions/workflows/ci.yml/badge.svg)](https://github.com/pkmniako/lab1-git-race/actions/workflows/ci.yml)
+Jaime Conchello | 776012 | [![Build Status](https://github.com/jaimecb/lab1-git-race/actions/workflows/ci.yml/badge.svg)](https://github.com/jaimecb/lab1-git-race/actions/workflows/ci.yml)
