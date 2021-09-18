@@ -14,7 +14,7 @@ import org.springframework.http.MediaType
 *   Class using JUnit and SpringBootTest for running tests. These test will make sure 
 *   the different modules of the system work together correctly.
 */
-@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)    // Creates a mock environment to test with
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 class IntegrationTest {
     @LocalServerPort
     private var port: Int = 0
@@ -31,8 +31,10 @@ class IntegrationTest {
     fun testHome() {
         // Creates synchronous client to perform requests
         with(restTemplate.getForEntity("http://localhost:$port", String::class.java)) {
-            assertThat(statusCode).isEqualTo(HttpStatus.OK) // Checks the server is running correctly (returns code 200: "OK")
-            assertThat(body).contains("<title>Hello") // Checks the body contains the title "Hello"
+            // Checks the server is running correctly (returns code 200: "OK")
+            assertThat(statusCode).isEqualTo(HttpStatus.OK) 
+            // Checks the body contains the title "Hello"
+            assertThat(body).contains("<title>Hello")
         }
     }
 
@@ -45,9 +47,12 @@ class IntegrationTest {
     fun testCss() {
         // Creates synchronous client to perform requests
         with(restTemplate.getForEntity("http://localhost:$port/webjars/bootstrap/5.1.0/css/bootstrap.min.css", String::class.java)) {
-            assertThat(statusCode).isEqualTo(HttpStatus.OK) // Checks the server is running correctly (returns code 200: "OK")
-            assertThat(body).contains("body") // Checks the body contains the keyword "body"
-            assertThat(headers.contentType).isEqualTo(MediaType.valueOf("text/css")) // Checks that the headers have the MIME type "text" and the subtype "css" 
+            // Checks the server is running correctly (returns code 200: "OK")
+            assertThat(statusCode).isEqualTo(HttpStatus.OK)
+            // Checks the body contains the keyword "body"
+            assertThat(body).contains("body")
+            // Checks that the headers have the MIME type "text" and the subtype "css" 
+            assertThat(headers.contentType).isEqualTo(MediaType.valueOf("text/css"))
         }
     }
 }
