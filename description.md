@@ -45,7 +45,7 @@ Kotlin is configured to run on the JVM.
 When the Kotlin targets the JVM platform, options of the compile task are specified in the `compileKotlin` variable.
 In our case, we specify that the target version of the JVM is 11 with `jvmTarget` and we configure the compiler to generate error by adding the `-Xjsr305=strict` flag.
 
-# How to test the code
+## How to test the code
 
 Testing is handled using JUnit, a powerful framework that allows you to check different aspects of your code.
 
@@ -63,7 +63,7 @@ cd lab1-git-race
 gradle check
 ```
 
-## Integration Tests
+### Integration Tests
 
 There's 3 tests, stored at `src/test/kotlin`, that have been made for this Kotlin Webpage
 
