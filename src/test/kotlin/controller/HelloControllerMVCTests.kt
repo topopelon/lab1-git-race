@@ -12,15 +12,20 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.*
 
 @WebMvcTest(HelloController::class)
 class HelloControllerMVCTests {
-    // Assign '/src/main/resources/application.properties/app.message' to [message]
+    /**
+     * Assigns the property `app.message` in `application.properties` to [message]
+     */ 
     @Value("\${app.message}") private lateinit var message: String
 
-    // Mock the Spring controller
+    /**
+     * Mocks the Spring controller
+     */
     @Autowired private lateinit var mockMvc: MockMvc
 
     /**
      * With the controller [HelloController] mocked, test performs a GET request to server-side
      * endpoint "/" and:
+     * 
      * - print the response
      * - expect to receive an OK status (code 200)
      * - expect the atributte "message" of the model to be [message]
